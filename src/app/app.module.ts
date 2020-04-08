@@ -16,7 +16,7 @@ import { PostFormComponent } from './post-form/post-form.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

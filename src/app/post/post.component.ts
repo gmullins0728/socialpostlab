@@ -8,7 +8,7 @@ import { Post } from '../interfaces/post';
 })
 export class PostComponent implements OnInit {
   @Input() post: Post;
-  @Output() deleted: EventEmitter<string> = new EventEmitter<string>();
+  @Output() deleted: EventEmitter<void> = new EventEmitter<void>();
   
   
   
@@ -17,8 +17,8 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deletePost(deleted) {
-    this.deleted.emit(this.post.thought);
+  deletePost() {
+    this.deleted.emit();
   }
 
 }

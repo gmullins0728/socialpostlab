@@ -27,11 +27,6 @@ h1 {
     color: rgb(3, 169, 244);
 }
 
-span {
-    font-size: 24px;
-    font-family: 'Dosis', sans-serif;
-}
-
 .addThought {
     width: 50.3%;
     height: 40px;
@@ -43,24 +38,4 @@ span {
     font-size: 15px;
     font-family: 'Dosis', sans-serif;
     padding: 5px;
-}
-
-p {
-    position: relative;
-    width: 95%;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    background: transparent;
-    font-size: 1rem;
-    font-family: 'Dosis', sans-serif;
-    padding: 0;
-}
-
-.delete {
-    margin: auto;
-    margin-right: 20px;
-    width: 10%;
-    background-color: transparent;
-    border: none;
 }

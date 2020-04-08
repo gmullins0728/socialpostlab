@@ -1,18 +1,8 @@
 <main>
-        
-        <h1>My Thoughts</h1>
-        <button class="addThought" (click)="onSubmit()">New Thought</button>
-        <!-- <app-post-form *ngIf="showPost" (submitted) ="submitPost($event)"></app-post-form> -->
-    <section>
-        <ol *ngFor="let post of posts">
-            <span class="title">{{post.title}}</span>
-        <div class="container">
-            <button class="delete" style="float:right" (click)="onDelete(post)">X</button>
-            <!-- <app-post [post]="post" (deleted)="deletePost($event)"></app-post> -->
-            <p class="thought">{{post.thought}}</p>
-        </div>
-        </ol>
-    </section>
+    <h1>My Thoughts</h1>
+    <button class="addThought" (click)="onSubmit($event)">New Thought</button>
+    <app-post-form *ngIf="showPost" (submitted) ="onSubmit($event)"></app-post-form>
+<section>
+    <app-post *ngFor= "let post of posts" [post]="post" (deleted)="onDelete($event)"></app-post>
+</section>
 </main>
-
-

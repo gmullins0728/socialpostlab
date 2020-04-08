@@ -8,7 +8,6 @@ import { Post } from '../interfaces/post';
   styleUrls: ['./social-posts.component.css']
 })
 export class SocialPostsComponent implements OnInit {
-
   posts: Post[] = [
     { title: 'Grand Circus', thought: 'Grand Circus is a great bootcamp!'},
     { title: 'ToDo', thought: 'Developing a Todo app was a good learning experience.'},
@@ -16,7 +15,7 @@ export class SocialPostsComponent implements OnInit {
   ];
 
   showPost: boolean = false;
-  onSubmit(): void {
+  onSubmit(e): void {
     this.showPost = !this.showPost;
   }
 
@@ -27,7 +26,5 @@ export class SocialPostsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  
 
 }
