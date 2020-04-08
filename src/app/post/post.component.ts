@@ -17,7 +17,7 @@ export class PostComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deletePost() {
+  deletePost(): void {
     this.deleted.emit();
   }
 

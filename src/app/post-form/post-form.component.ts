@@ -18,16 +18,17 @@ export class PostFormComponent implements OnInit {
     this.submitted.emit(form.value);
     form.reset();
   }
-//   posts: Post [] = [];
-//   newTitle = '';
-//   newThought = '';
-//   addThought(newThought): void {
-//   this.posts.push({
-//     title: this.newTitle,
-//     thought: newThought
-//   });
-//   this.newTitle = '';
-//   this.newThought = '';
-// }
+  
+  posts: Post [] = [];
+  newTitle = '';
+  newThought = '';
+  addThought(newThought): void {
+  this.posts.push({
+    title: this.newTitle,
+    thought: newThought
+  });
+  this.newTitle = '';
+  this.newThought = '';
+}
 
 }

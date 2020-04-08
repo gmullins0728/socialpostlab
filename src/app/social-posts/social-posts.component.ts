@@ -15,7 +15,7 @@ export class SocialPostsComponent implements OnInit {
   ];
 
   showPost: boolean = false;
-  onSubmit(e): void {
+  onSubmit(): void {
     this.showPost = !this.showPost;
   }
 
